@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center header-all">
+                <div class="col-md-1 nama-wrap">
+                    <div class="nama-kiri-atas">
+                        <span>Toko Online</span>
+                    </div>
+                </div>
+                <div class="col-md-1 link-home">
+                    <a href="{% url 'tokoonline:home' %}">Home</a>
+                </div>
+                <div class="col-md-10">
+                    <!-- EMPTY -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="container-fluid">
+        <div class="row d-flex align-items-center header-all">
+            <div class="col-md-1">
+                <div class="nama-kiri-atas">
+                    <span>Toko Online</span>
+                </div>    
+            <div class="col-md-1">
+                <a href="">Home</a>
+            </div>
+            <div class="col-md-10">
+                <!-- EMPTY 
+            </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- akhir header -->
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

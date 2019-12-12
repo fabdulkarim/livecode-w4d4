@@ -1,0 +1,19 @@
+{% extends 'tokoonline/base.html' %}
+
+{% block title %}
+{{barang_satuan.title}}
+{% endblock %}
+{% block content%}
+<div class="container start-content d-flex justify-content-center">
+    <div class="col-md-3 single-card">
+        <div class="image-icon d-flex justify-content-center">
+            <img src="{{barang_satuan.image}}" alt="">
+        </div>
+        <h3 class="text-left">{{barang_satuan.title}}</h3>
+        <p class="text-left">Rp. {{barang_satuan.price}}</p>
+        <p>Deskripsi</p>
+        <span>{{barang_satuan.description}}</span>
+     
+    </div>
+</div>
+{% endblock %}

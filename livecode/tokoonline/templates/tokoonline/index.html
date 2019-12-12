@@ -1,0 +1,26 @@
+{% extends 'tokoonline/base.html' %}
+
+
+{% block title %}
+Toko Online Terpercaya
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+{% for bar in barang_objects %}
+<div class="container start-content">
+    <div class="col-md-3 single-card">
+        <div class="image-icon d-flex justify-content-center">
+            <img src="{{bar.image}}" alt="">
+        </div>
+        <h3 class="text-left">{{bar.title}}</h3>
+        <p class="text-left">Rp. {{bar.price}}</p>
+        
+        <a href="{% url 'tokoonline:barang' bar.id %}">Selengkapnya</a>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
