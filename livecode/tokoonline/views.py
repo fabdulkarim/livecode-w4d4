@@ -21,8 +21,7 @@ def barang(request, barang_id):
     return render(request, 'tokoonline/barang.html', {'barang_satuan':barang_satuan})
 
 def tambah(request):
-
-    return render(request, 'tambah.html', {})
+    return render(request, 'tokoonline/tambah.html')
 
 def submit(request):
     image = request.POST['image']
