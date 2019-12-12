@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import Barang
 
@@ -25,4 +25,12 @@ def tambah(request):
     return render(request,'tambah.html',{})
 
 def submit(request):
-    pass
+    image = request.POST['image']
+    title = request.POST['title']
+    price = request.POST['price']
+    desription = request.POST['description']
+
+    Barang(image=image,title=title,price=price,description=description).save()
+
+    return redirect('')    
+    
