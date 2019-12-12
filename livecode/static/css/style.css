@@ -1,0 +1,47 @@
+/* .header {
+    height: 35px;
+} */
+.header-all {
+    width: 100%;
+    background-color: #59c5c3;
+    color: white;
+    position: fixed;
+    height: 35px;
+    font-size: 14px;
+}
+
+.nama-wrap {
+    padding: 0;
+}
+.nama-kiri-atas {
+    background-color: #459b99 ;
+    width: 100%;
+    height: 100%;
+    /* padding: 0; */
+}
+
+.link-home {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*----------------------- END HEADER --------------------------------*/
+
+
+.start-content {
+    padding-top: 50px;
+}
+
+.single-card {
+    padding: 15px;
+    border: 1px solid #ececec;
+}
+
+.image-icon {
+    height: 150px;
+}
+
+.image-icon img {
+    max-height: 98%;
+}
