@@ -22,7 +22,7 @@ def barang(request, barang_id):
 
 def tambah(request):
 
-    return render(request,'tambah.html',{})
+    return render(request,'tokoonline/tambah.html',{})
 
 def submit(request):
     image = request.POST['image']
